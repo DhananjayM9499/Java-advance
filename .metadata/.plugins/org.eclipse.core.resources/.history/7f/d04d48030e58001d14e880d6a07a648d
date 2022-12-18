@@ -1,0 +1,11 @@
+package Mohokar.Dhananjay;
+
+public class Product_Mohokar
+{
+	 int catId;
+     int productId;
+	 String productName;
+	 String productDesc;
+	 float productPrice;
+
+}

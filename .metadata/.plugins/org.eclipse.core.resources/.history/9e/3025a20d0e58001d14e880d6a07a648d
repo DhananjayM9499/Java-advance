@@ -1,0 +1,22 @@
+package Mohokar.Dhananjay;
+
+public class Product_Mohokar
+{
+	 private int catId;
+     private int productId;
+	 private String productName;
+	 private String productDesc;
+	 private float productPrice;
+
+	
+	 public Product_Mohokar(int catId, int productId, String productName, String productDesc, float productPrice)
+	{
+		super();
+		this.catId = catId;
+		this.productId = productId;
+		this.productName = productName;
+		this.productDesc = productDesc;
+		this.productPrice = productPrice;
+	}
+	
+}

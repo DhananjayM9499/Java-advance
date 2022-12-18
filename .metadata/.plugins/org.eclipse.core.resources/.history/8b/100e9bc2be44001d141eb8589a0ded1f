@@ -1,0 +1,18 @@
+package Date.copy;
+
+import java.util.Set;
+
+public class Program {
+
+	public static void main(String[] args) {
+		System.out.println("Enter the day");
+		int day = 
+		
+				
+
+	}
+
+}
+
+
+

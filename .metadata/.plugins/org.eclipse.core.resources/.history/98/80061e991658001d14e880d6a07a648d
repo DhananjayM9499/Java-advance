@@ -1,0 +1,55 @@
+package Mohokar.Dhananjay;
+
+import java.util.Scanner;
+import java.util.Vector;
+
+public class Program_Mohokar
+{
+
+	public static void main(String[] args)
+	{
+		final int ADD_DETAILS = 1;
+		final int SHOW_DETAILS = 2;
+		final int EXIT = 3;
+		Vector<Product_Mohokar> objMohokar = new Vector<>();
+		Scanner scanner = new Scanner(System.in);
+		int choice = 0;
+		while (choice != EXIT) {
+			System.out.println("1. Add Product Details\n2. Show All the Products ");
+			System.out.println("Enter your choice");
+			choice = scanner.nextInt();
+			switch (choice)
+			{
+			case ADD_DETAILS: {
+				System.out.println("Enter Category ID Number : ");
+				int catId = scanner.nextInt();
+				System.out.println("Enter Product ID Number : ");
+				int productId = scanner.nextInt();
+				System.out.println("Enter Product Name : ");
+				String productName = scanner.next();
+				System.out.println("Enter Product Description");
+				String productDescription = scanner.next();
+				System.out.println("Enter the Price of the Product");
+				float productPrice = scanner.nextFloat();
+
+				Product_Mohokar objProduct_Mohokar = new Product_Mohokar(catId, productId, productName,
+						productDescription, productPrice);
+				objMohokar.add(objProduct_Mohokar);
+			}
+				break;
+
+			case SHOW_DETAILS: {
+				for (Product_Mohokar product_Mohokar : objMohokar) {
+					
+			            System.out.println(product_Mohokar + " ");
+				}
+				
+
+			}
+
+			}
+
+		}
+
+	}
+}

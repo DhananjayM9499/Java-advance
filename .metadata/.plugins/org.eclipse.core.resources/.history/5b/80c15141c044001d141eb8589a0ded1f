@@ -1,0 +1,24 @@
+
+
+import java.util.Set;
+
+public class Program {
+
+	public static void main(String[] args) {
+		System.out.println("Enter the Day");
+		int day = ConsoleInput.getInteger();
+		
+		System.out.println("Enter the Month");
+		int month = ConsoleInput.getInteger();
+		
+		System.out.println("Enter the Year");
+		int year = ConsoleInput.getInteger();
+		
+				
+
+	}
+
+}
+
+
+
